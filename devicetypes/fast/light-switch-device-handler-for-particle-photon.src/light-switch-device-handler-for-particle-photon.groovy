@@ -77,7 +77,6 @@ def refresh() {
 	particle_checkIfLightsAreOn()
 }
 
-
 // custom commands
 
 command "on"
@@ -138,8 +137,7 @@ def get(variable) {
                 	log.debug "off"
                 	sendEvent(name: "switch", value: "off", displayed:true)
                 }
-    			
-            }
+        }
    	} catch (e) {
     	log.error "something went wrong: $e"
 	}
