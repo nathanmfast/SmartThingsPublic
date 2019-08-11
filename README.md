@@ -7,6 +7,7 @@ A library of my own SmartThings Device Handlers, mostly wrapping functionality f
 
 
 For more information on how this Repository is structured visit:
+
 https://docs.smartthings.com/en/latest/tools-and-ide/github-integration.html
 
 > Each SmartApp and Device Handler should be in its own directory, named the same as the SmartApp or Device Handler, and appended with ".src".
