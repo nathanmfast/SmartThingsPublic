@@ -60,7 +60,7 @@ metadata {
 
         main(["switch"])
 
-        details(["switch","levelSliderControl","rgbSelector","red","blue","rainbow","america"])
+        details(["switch","levelSliderControl","rgbSelector","red","blue","rainbow","america","leila"])
     }
 }
 
