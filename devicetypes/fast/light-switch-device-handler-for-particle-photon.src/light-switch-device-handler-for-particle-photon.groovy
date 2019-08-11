@@ -40,7 +40,7 @@ metadata {
 	definition (
         namespace: "Fast", 
         name: "Light Switch Device Handler For Particle Photon", 
-        author: "Nathan Fast"
+        author: "Nathan Fast",
         cstHandler: true
     ) {
     	//https://docs.smartthings.com/en/latest/capabilities-reference.html?highlight=capabilities
@@ -139,6 +139,6 @@ def get(variable) {
                 }
         }
    	} catch (e) {
-    	log.error "something went wrong: $e"
+        log.error "something went wrong: $e"
 	}
 }
