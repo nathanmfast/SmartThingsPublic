@@ -108,7 +108,7 @@ def post(method, arg) {
 	    'uri' : "https://api.particle.io/v1/devices/${deviceId}/${method}",
         'contentType': "application/x-www-form-urlencoded",
         'body' : [
-            'access_token' : "${access_token}",
+            'access_token' : "${accessToken}",
             'arg' : arg 
         ]
     ]) {
@@ -121,7 +121,7 @@ def post(method, arg) {
 def get(variable) {
 	try {
     	httpGet([
-            'uri' : "https://api.particle.io/v1/devices/${deviceId}/${variable}?access_token=${access_token}"
+            'uri' : "https://api.particle.io/v1/devices/${deviceId}/${variable}?access_token=${accessToken}"
         ]) {
     		response ->
                 log.debug "Response Received"
