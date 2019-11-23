@@ -81,11 +81,13 @@ def refresh() {
 
 command "on"
 def on(){
+    log.debug("---on---")
 	particle_turnLightsOn()
 }
 
 command "off"
 def off() {
+    log.debug("---off---")
 	particle_turnLightsOff()
 }
 
