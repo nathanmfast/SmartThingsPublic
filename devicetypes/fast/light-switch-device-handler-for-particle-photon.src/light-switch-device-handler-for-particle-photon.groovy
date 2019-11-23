@@ -104,6 +104,7 @@ def particle_checkIfLightsAreOn() {
 }
 
 def post(method, arg) {
+    log.debug "---post(${method}, ${arg})---"
 	httpPost([
 	    'uri' : "https://api.particle.io/v1/devices/${deviceId}/${method}",
         'contentType': "application/x-www-form-urlencoded",
@@ -120,6 +121,7 @@ def post(method, arg) {
 
 def get(variable) {
 	try {
+        log.debug "---get(${variable})---"
     	httpGet([
             'uri' : "https://api.particle.io/v1/devices/${deviceId}/${variable}?access_token=${accessToken}"
         ]) {
@@ -139,6 +141,6 @@ def get(variable) {
                 }
         }
    	} catch (e) {
-        log.error "something went wrong: $e"
+        log.debug "something went wrong: $e"
 	}
 }
